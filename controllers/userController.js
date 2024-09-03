@@ -1,5 +1,5 @@
-const { fetchTransactions, calculateTotalExpenses } = require('../services/transactionService');
-const { getLatestEthereumPrice } = require('../services/ethereumPriceService');
+const { fetchTransactions, calculateTotalExpenses } = require('../services/transactionService.js');
+const { getLatestEthereumPrice } = require('../services/ethereumPriceService.js');
 
 exports.getUserExpensesAndEtherPrice = async (req, res) => {
   try {

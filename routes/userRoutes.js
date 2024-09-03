@@ -1,5 +1,5 @@
 const express = require('express');
-const { getUserExpensesAndEtherPrice } = require('../controllers/userController');
+const { getUserExpensesAndEtherPrice } = require('../controllers/userController.js');
 
 const router = express.Router();
 

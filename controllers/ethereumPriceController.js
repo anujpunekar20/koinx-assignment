@@ -1,4 +1,4 @@
-const EthereumPrice = require("../models/ethereumPrice");
+const EthereumPrice = require("../models/ethereumPrice.js");
 
 exports.getLatestPrice = async (req, res) => {
   try {

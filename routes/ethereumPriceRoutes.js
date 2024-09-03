@@ -1,5 +1,5 @@
 const express = require('express');
-const PriceController = require('../controllers/ethereumPriceController');
+const PriceController = require('../controllers/ethereumPriceController.js');
 
 const router = express.Router();
 

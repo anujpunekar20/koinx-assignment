@@ -1,5 +1,5 @@
 const axios = require("axios");
-const Transaction = require("../models/transaction");
+const Transaction = require("../models/transaction.js");
 
 exports.fetchTransactions = async (address) => {
   const storedTransactions = await Transaction.findOne({ address });

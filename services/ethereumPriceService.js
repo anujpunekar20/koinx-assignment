@@ -1,5 +1,5 @@
 const axios = require("axios");
-const EthereumPrice = require("../models/ethereumPrice");
+const EthereumPrice = require("../models/ethereumPrice.js");
 
 const fetchAndStoreEthereumPrice = async () => {
   try {
