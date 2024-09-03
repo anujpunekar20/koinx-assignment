@@ -1,5 +1,5 @@
 const {fetchTransactions, storeTransactions} = require('../services/transactionService');
-const Transaction = require('../models/Transaction');
+const Transaction = require('../models/transaction');
 
 exports.getTransactions = async (req, res) => {
     try{

@@ -1,21 +1,5 @@
 const axios = require("axios");
-const Transaction = require("../models/Transaction");
-
-// exports.fetchTransactions = async (address) => {
-//   const response = await axios.get(`https://api.etherscan.io/api`, {
-//     params: {
-//       module: "account",
-//       action: "txlist",
-//       address: address,
-//       startblock: 0,
-//       endblock: 99999999,
-//       sort: "asc",
-//       apikey: process.env.ETHERSCAN_API_KEY,
-//     },
-//   });
-
-//   return response.data.result;
-// };
+const Transaction = require("../models/transaction");
 
 exports.fetchTransactions = async (address) => {
   const storedTransactions = await Transaction.findOne({ address });
