@@ -44,6 +44,10 @@ const setupRoutes = (app) => {
   app.use("/api/balance", userRoutes);
 };
 
+setTimeout(() => {
+    setupRoutes(app);
+  }, 1000)
+
 startEthereumPriceFetcher();
 
 app.listen(port, () => {
